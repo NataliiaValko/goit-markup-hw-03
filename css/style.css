@@ -1,0 +1,238 @@
+/* цвет логотипа  #2196F3  #000000 */
+
+/* + цвет текста и емейла #757575 */
+
+/* + цвет навигации #212121 */
+
+/* + навигации при наведении #2196F3 и бекграунд кнопки в герое */
+
+/* + цвет текста героя #FFFFFF */
+
+/*  + цвет заголовка 2 и 3 #212121 */
+
+/* цвет емейла и телефона в футере  rgba(255, 255, 255, 0.6) */
+
+/* + бекграунд секции наша команда #F5F4FA */
+
+/* + бекграунд подваал #2F303A */
+
+:root {
+  --text-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --hero-title-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+  --logo-black-color: #000000;
+  --footer-background-color: #2f303a;
+  --footer-email-tel: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  background-color: var(--hero-title-color);
+  color: var(--text-color);
+}
+
+/* Site navigation */
+
+.nav {
+  font-weight: 500;
+}
+
+.logo {
+  text-decoration: inherit;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--accent-color);
+}
+
+.header-studio {
+  color: var(--logo-black-color);
+}
+
+.nav-list {
+  letter-spacing: 0.02em;
+}
+
+.current {
+  text-decoration: inherit;
+
+  color: var(--accent-color);
+}
+
+.nav-link {
+  text-decoration: inherit;
+
+  color: var(--title-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  text-decoration: inherit;
+
+  color: inherit;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-title-color);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+}
+
+/* Section features */
+
+.features {
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: inherit;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.features-text {
+  line-height: 1.7;
+}
+
+/* What are we doing */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+
+  color: var(--title-color);
+}
+
+/* Our team */
+
+.team {
+  background-color: var(--team-background-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(--title-color);
+}
+
+.team-position {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-studio {
+  color: var(--hero-title-color);
+}
+
+.footer-address {
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: inherit;
+  color: var(--hero-title-color);
+}
+
+.footer-email {
+  line-height: 1.7;
+  text-decoration: inherit;
+  color: var(--footer-email-tel);
+}
+
+/* Portfolio.html */
+
+.buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: inherit;
+
+  color: var(--title-color);
+  background-color: var(--team-background-color);
+}
+
+.buttons:focus,
+.buttons:hover {
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+}
+
+.work-link {
+  text-decoration: inherit;
+}
+
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+
+.work-text {
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: var(--text-color);
+}
+
+.work-description {
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+}
