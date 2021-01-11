@@ -85,7 +85,7 @@
   text-align: center;
   margin-bottom: 94px;
 }
-.we-doing-container .section-title {
+.we-doing-container .section-title {				
   margin-bottom: 50px;
 }
 
@@ -109,4 +109,59 @@
 .team-position {
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/**//**//**//**//**//*/*/*/*/*/*/*/
+
+
+
+
+
+
+button {
+  cursor: pointer;
+
+
+.hero-button {
+  letter-spacing: 0.06em;
+font-family: inherit;
+  font-weight: 700;
+font-size: 16px;
+  line-height: 1.9;
+border-radius: 4px;
+
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+
+display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+}
+
+.buttons {
+font-family: inherit;
+  font-weight: 500;
+font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: inherit;
+border-radius: 4px;
+
+  color: var(--title-color);
+  background-color: var(--team-background-color);
+
+display: inline-block;
+  padding: 6px 22px;
+}
+
+.buttons:focus,
+.buttons:hover {
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
 }
