@@ -201,7 +201,8 @@ header > .container {
 }
 
 .features-list > li {
-  width: 270px;
+  width: calc ((100% - 3 * 30px) / 4);
+  /* width: 270px; */
 }
 
 .features-list > li:not(:last-child) {
@@ -306,7 +307,7 @@ header > .container {
   margin-bottom: 20px;
 }
 
-.footer .container {
+.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0;
@@ -314,6 +315,9 @@ header > .container {
   text-align: left;
 }
 
+.part-address {
+  width: 231px;
+}
 .footer {
   background-color: var(--footer-background-color);
 }
@@ -335,6 +339,8 @@ header > .container {
 }
 
 .footer-email {
+  display: inline-block;
+
   color: var(--footer-email-tel);
 }
 
