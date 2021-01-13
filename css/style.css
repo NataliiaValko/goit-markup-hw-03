@@ -142,12 +142,14 @@ header > .container {
 .hero {
   text-align: center;
   background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-object {
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+
   width: 605px;
 }
 /* удалить  див с классом херо-позишион в штмл*/
@@ -236,6 +238,9 @@ header > .container {
 }
 
 /* What are we doing */
+.we-doing {
+  padding-bottom: 94px;
+}
 
 .section-title {
   margin-bottom: 50px;
@@ -326,9 +331,6 @@ header > .container {
   text-align: left;
 }
 
-.part-address {
-  width: 231px;
-}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
