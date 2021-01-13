@@ -43,7 +43,8 @@ a {
 
 .container {
   width: 1200px;
-  padding: 94px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -53,8 +54,6 @@ header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
   text-align: left;
 }
 
@@ -107,13 +106,16 @@ header > .container {
   color: var(--accent-color);
 }
 
-/* Нужно спросить у дизайнера, но вроде круто */
-
-.nav-list .link,
-.list-contacts .link,
 .nav .link {
   display: block;
-  padding: 32px 0px;
+  padding: 24px 0px;
+}
+
+.nav-list .link,
+.list-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .features-title,
@@ -142,11 +144,19 @@ header > .container {
   background-color: var(--hero-background-color);
 }
 
-/* Не ругайся, товарищ ментор, это для красоты, я потом уберу*/
-
-.hero > .container {
-  padding: 200px 280px;
+.hero-object {
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 605px;
 }
+/* удалить  див с классом херо-позишион в штмл*/
+
+/* .hero-position {
+  display: flex;
+  align-items: center;
+  height: 600px;
+} */
 
 .hero-title,
 .hero-button {
@@ -161,7 +171,7 @@ header > .container {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-transform: uppercase;
 }
 
@@ -178,17 +188,19 @@ header > .container {
   min-width: 200px;
 
   font-weight: 700;
-  line-height: 1.9;
+  line-height: 1.88;
 
   background-color: var(--accent-color);
 }
 
 /* Section features */
 
-.features > .container {
+.features {
   padding-top: 88px;
   padding-bottom: 100px;
+}
 
+.features > .container {
   text-align: left;
 }
 
@@ -225,9 +237,6 @@ header > .container {
 
 /* What are we doing */
 
-.we-doing > .container {
-  padding-top: 0;
-}
 .section-title {
   margin-bottom: 50px;
 
@@ -250,11 +259,12 @@ header > .container {
 
 .team > .container {
   margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--team-background-color);
 }
 
@@ -276,7 +286,10 @@ header > .container {
 
 .team-foto {
   display: block;
-  margin: 0px auto 30px auto;
+}
+
+.taem-card {
+  padding: 30px;
 }
 
 .team-name,
@@ -295,7 +308,7 @@ header > .container {
 
 .team-position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 
   text-transform: capitalize;
 }
@@ -308,8 +321,6 @@ header > .container {
 }
 
 .footer > .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-bottom: 0;
   align-items: baseline;
   text-align: left;
@@ -319,6 +330,9 @@ header > .container {
   width: 231px;
 }
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
 }
 
@@ -331,10 +345,15 @@ header > .container {
 .footer-email {
   display: block;
   line-height: 1.7;
+}
+
+.element-list {
   margin-bottom: 9px;
 }
 
 .footer-address {
+  margin-bottom: 9px;
+
   font-style: normal;
 }
 
@@ -344,17 +363,13 @@ header > .container {
   color: var(--footer-email-tel);
 }
 
-.footer-email.link.end {
-  margin-bottom: 0;
-}
-
 /* Portfolio.html */
 
 .work .section-title {
   display: none;
 }
 
-.work .container {
+.work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
