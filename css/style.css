@@ -9,6 +9,7 @@
   --footer-background-color: #2f303a;
   --footer-email-tel: rgba(255, 255, 255, 0.6);
   --color-border-portfolio: #eeeeee;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -37,6 +38,10 @@ body {
 
 a {
   cursor: pointer;
+}
+
+header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Site navigation */
