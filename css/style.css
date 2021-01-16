@@ -40,6 +40,17 @@ a {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 header {
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -156,13 +167,6 @@ header > .container {
   margin-right: auto;
   width: 696px;
 }
-/* удалить  див с классом херо-позишион в штмл*/
-
-/* .hero-position {
-  display: flex;
-  align-items: center;
-  height: 600px;
-} */
 
 .hero-title,
 .hero-button {
@@ -210,17 +214,12 @@ header > .container {
   text-align: left;
 }
 
-.features .section-title {
-  display: none;
-}
-
 .features-list {
   display: flex;
 }
 
 .features-list > li {
   width: calc((100% - (3 * 30px)) / 4);
-  /* width: 270px; */
 }
 
 .features-list > li:not(:last-child) {
@@ -369,10 +368,6 @@ header > .container {
 
 /* Portfolio.html */
 
-.work .section-title {
-  display: none;
-}
-
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -415,8 +410,7 @@ header > .container {
   margin-bottom: 30px;
 
   width: calc((100% - (2 * 30px)) / 3);
-  /*  width: 370px;
- */
+
   outline: 1px solid var(--color-border-portfolio);
 }
 
